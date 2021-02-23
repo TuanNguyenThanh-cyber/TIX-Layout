@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>TIX - Đặt vé nhanh nhất / Trang chủ</title>
+
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css"
+    integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
+
+  <!-- FONT AWSOME -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css">
+
+  <!-- FONT ROBOTO -->
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap" rel="stylesheet">
+
+  <!-- Magnific-Popup -->
+  <link rel="stylesheet" href="./css/magnific-popup.css">
+
+  <!-- MAIN CSS -->
+  <link rel="stylesheet" href="./css/main.css">
+
+</head>
+
+<body>
+  <header>
+    <div class="container-fluid">
+      <div class="row header__navbar">
+        <div class="header__logo col-xl-1 col-lg-2 col-md-2">
+          <a href="#">
+            <img src="./img/web-logo.png" alt="">
+          </a>
+        </div>
+        <div class="header__menu text-center col-xl-7 col-lg-5 col-md-5 d-none d-md-block d-lg-block d-xl-block">
+          <a href="">Lịch Chiếu</a>
+          <a href="">Cụm rạp</a>
+          <a href="">Tin Tức</a>
+          <a href="">Ứng dụng</a>
+        </div>
+        <div class="header__right col-xl-4 col-lg-5 col-md-5 d-none d-sm-flex">
+          <div class="header__right-account">
+            <a href="">
+              <img src="./img/avatar.png" alt="">
+              <p>Đăng Nhập</p>
+            </a>
+          </div>
+          <div class="dropdown header__right-location">
+            <img src="./img/location-header.png" alt="">
+            <button type="button" class="btn" id="dropdownMenuOffset" data-toggle="dropdown" aria-haspopup="true"
+              aria-expanded="false" data-offset="10,20">
+              <span>Hồ Chí Minh</span>
+              <img src="./img/dropdown-icon.png" alt="">
+            </button>
+            <div class="dropdown-menu" aria-labelledby="dropdownMenuOffset">
+              <a class="dropdown-item" href="#">Hồ Chí Minh</a>
+              <a class="dropdown-item" href="#">Hà Nội</a>
+              <a class="dropdown-item" href="#">Đà Nẵng</a>
+              <a class="dropdown-item" href="#">Hải Phòng</a>
+              <a class="dropdown-item" href="#">Cần Thơ</a>
+            </div>
+          </div>
+        </div>
+        <button class="btn d-sm-none" id="header__right-dropdown-button">
+          <img src="./img/menu-options.png" alt="">
+        </button>
+      </div>
+    </div>
+    </div>
+    </div>
+  </header>
+
+  <section class="tix-carousel">
+    <div id="carouselExampleIndicators" class="carousel slide tix-carousel__content" data-ride="carousel">
+      <ol class="carousel-indicators">
+        <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+        <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+        <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+      </ol>
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <a href="">
+            <img src="./img/em-la-cua-em-16106818552756.jpg" class="d-block w-100" alt="...">
+            <a href="" id="popup-em-la-cua-em">
+              <button>
+                <i class="fa fa-play"></i>
+              </button>
+            </a>
+          </a>
+        </div>
+        <div class="carousel-item">
+          <a href="">
+            <img src="./img/lua-deu-gap-lua-dao-16105107337344.jpg" class="d-block w-100" alt="...">
+            <a href="" id="popup-lua-deu-gap-lua-dao">
+              <button>
+                <i class="fa fa-play"></i>
+              </button>
+            </a>
+          </a>
+        </div>
+        <div class="carousel-item">
+          <a href="">
+            <img src="./img/can-phong-ma-am-16115699578033.jpg" class="d-block w-100" alt="...">
+            <a href="" id="popup-can-phong-ma-am">
+              <button>
+                <i class="fa fa-play"></i>
+              </button>
+            </a>
+          </a>
+        </div>
+      </div>
+      <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="sr-only">Previous</span>
+      </a>
+      <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="sr-only">Next</span>
+      </a>
+    </div>
+  </section>
+
+  <section class="tix-buyticket d-none d-lg-block">
+    <div class="tix__container">
+      <div class="tix-buyticket__row">
+        <div class="dropdown tix-buyticket-btn">
+          <button class="btn" type="button" id="dropdownMenu2" data-toggle="dropdown" aria-haspopup="true"
+            aria-expanded="false" data-flip="false" >
+            <span>Phim</span>
+            <img src="./img/dropdown-icon.png" alt="">
+          </button>
+          <div class="dropdown-menu" aria-labelledby="dropdownMenu2">
+            <button class="dropdown-item" type="button">Tom & Jerry</button>
+            <button class="dropdown-item" type="button">Lừa Đểu Gặp Lừa Đảo - The Con-Heartist (C16)</button>
+            <button class="dropdown-item" type="button">Tazza: Thần Bịp Jack Chột - Tazza: One Eyed Jack (C13)</button>
+            <button class="dropdown-item" type="button">Tay Xạ Thủ - The Marksman (C16)</button>
+            <button class="dropdown-item" type="button">Ainbo: Nữ Chiến Binh Amazon - Ainbo: Spirit of the Amazon
+              (P)</button>
+            <button class="dropdown-item" type="button">Siêu Trộm Đường Phố</button>
+            <button class="dropdown-item" type="button">Nam Sinh Số 11 - The Child Who Would Not Come (C18)</button>
+            <button class="dropdown-item" type="button">Thợ Săn Quái Vật - Monster Hunter (C13)</button>
+            <button class="dropdown-item" type="button">Cua Lại Vợ Bầu - Win My Baby Back (C16)</button>
+            <button class="dropdown-item" type="button">Thuyền Trưởng Răng Kiếm và Viên Kim Cương Ma Thuật - Captain
+              Sabertooth and The Magic Diamond (P)</button>
+            <button class="dropdown-item" type="button">Căn Phòng Ma Ám - Stigmatized Properties (C16)</button>
+          </div>
+        </div>
+        <div class="dropdown tix-buyticket-btn">
+          <button class="btn" type="button" id="dropdownMenu2" data-toggle="dropdown" aria-haspopup="true"
+            aria-expanded="false" data-flip="false">
+            <span>Rạp</span>
+            <img src="./img/dropdown-icon.png" alt="">
+          </button>
+          <div class="dropdown-menu" aria-labelledby="dropdownMenu2">
+            <button class="dropdown-item" type="button">BHD Star - Bitexco</button>
+            <button class="dropdown-item" type="button">BHD Star - Vincom Thảo Điền</button>
+            <button class="dropdown-item" type="button">BHD Star - Vincom 3/2</button>
+            <button class="dropdown-item" type="button">BHD Star - Phạm Hùng</button>
+            <button class="dropdown-item" type="button">BHD Star - Vincom Quang Trung</button>
+            <button class="dropdown-item" type="button">BHD Star - Vincom Lê Văn Việt</button>
+            <button class="dropdown-item" type="button">Lotte - Cantavil</button>
+            <button class="dropdown-item" type="button">Lotte - Phú Thọ</button>
+            <button class="dropdown-item" type="button">Lotte - Nam Sài Gòn</button>
+            <button class="dropdown-item" type="button">Lotte - Gò Vấp</button>
+            <button class="dropdown-item" type="button">Lotte - Thủ Đức</button>
+            <button class="dropdown-item" type="button">Lotte - Cộng Hòa</button>
+          </div>
+        </div>
+        <div class="dropdown tix-buyticket-btn">
+          <button class="btn" type="button" id="dropdownMenu2" data-toggle="dropdown" aria-haspopup="true"
+            aria-expanded="false" data-flip="false">
+            <span>Ngày xem</span>
+            <img src="./img/dropdown-icon.png" alt="">
+          </button>
+          <div class="dropdown-menu" aria-labelledby="dropdownMenu2">
+            <button class="dropdown-item" type="button">22/2/2021</button>
+            <button class="dropdown-item" type="button">23/2/2021</button>
+            <button class="dropdown-item" type="button">24/2/2021</button>
+            <button class="dropdown-item" type="button">25/2/2021</button>
+            <button class="dropdown-item" type="button">26/2/2021</button>
+            <button class="dropdown-item" type="button">27/2/2021</button>
+            <button class="dropdown-item" type="button">28/2/2021</button>
+          </div>
+        </div>
+        <div class="dropdown tix-buyticket-btn">
+          <button class="btn" type="button" id="dropdownMenu2" data-toggle="dropdown" aria-haspopup="true"
+            aria-expanded="false" data-flip="false">
+            <span>Suất chiếu</span>
+            <img src="./img/dropdown-icon.png" alt="">
+          </button>
+          <div class="dropdown-menu" aria-labelledby="dropdownMenu2">
+            <button class="dropdown-item" type="button">10h - 11h30</button>
+            <button class="dropdown-item" type="button">13h - 14h30</button>
+            <button class="dropdown-item" type="button">16h - 17h30</button>
+            <button class="dropdown-item" type="button">18h - 19h30</button>
+            <button class="dropdown-item" type="button">20h - 21h30</button>
+            <button class="dropdown-item" type="button">22h - 23h30</button>
+          </div>
+        </div>
+        <button class="btn tix-buyticket-btn btn-buyticketnow">
+          Mua vé ngay
+        </button>
+      </div>
+    </div>
+  </section>
+  
+  <section class="tix-film">
+    <div class="tix__container">
+      <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <a class="navbar-brand" href="#">Navbar</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav">
+            <li class="nav-item active">
+              <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Features</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Pricing</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Disabled</a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+    </div>
+  </section>
+
+  <footer>
+
+  </footer>
+  <!-- Thư viện hỗ trợ JQuery -->
+  <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+
+  <!-- BS4 JS -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx"
+    crossorigin="anonymous"></script>
+
+  <!-- Magnific-Popup -->
+  <script src="./js/jquery.magnific-popup.min.js"></script>
+
+  <!-- Main JS -->
+  <script src="./js/main.js"></script>
+</body>
+
+</html>

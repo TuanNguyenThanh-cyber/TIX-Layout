@@ -1,0 +1,19 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body , html{
+    font-family: 'Roboto', sans-serif;
+    font-size: $fs-0;
+    color: $color-black-8;
+    background-color: $color-white-0;
+    line-height: $line-height-0;
+}
+
+.tix__container{
+    position: relative;
+    width: 70%;
+    margin: 0 auto;
+}

@@ -1,0 +1,319 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body, html {
+  font-family: 'Roboto', sans-serif;
+  font-size: 15px;
+  color: #333;
+  background-color: #ffffff;
+  line-height: 1.43;
+}
+
+.tix__container {
+  position: relative;
+  width: 70%;
+  margin: 0 auto;
+}
+
+header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: auto;
+  background-color: rgba(255, 255, 255, 0.95);
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+  z-index: 10;
+}
+
+header .header__navbar {
+  flex-wrap: nowrap;
+  padding: 20px;
+  align-items: center;
+}
+
+header .header__navbar .header__logo {
+  position: relative;
+}
+
+header .header__navbar .header__logo a img {
+  position: absolute;
+  top: 50%;
+  left: 0;
+  transform: translateY(-50%);
+  width: 70px;
+  height: auto;
+}
+
+header .header__navbar .header__menu {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transform: translateX(25%);
+}
+
+header .header__navbar .header__menu a {
+  color: #000000;
+  font-size: 15px;
+  font-weight: normal;
+  line-height: 1.43;
+  margin-right: 25px;
+  transition: all .2s;
+  text-decoration: none;
+}
+
+header .header__navbar .header__menu a:hover {
+  color: #fb4226;
+}
+
+header .header__navbar .header__right {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+}
+
+header .header__navbar .header__right .header__right-account a {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-decoration: none;
+  margin-right: 10px;
+  border-right: 1px solid #e8e8e8;
+}
+
+header .header__navbar .header__right .header__right-account a img {
+  width: 35px;
+  height: 35px;
+  border-radius: 50%;
+  margin-right: 5px;
+  margin-right: 10px;
+}
+
+header .header__navbar .header__right .header__right-account a p {
+  color: #9b9b9b;
+  font-size: 13px;
+  font-weight: normal;
+  line-height: 1.43;
+  margin-bottom: 0;
+  padding-right: 10px;
+}
+
+header .header__navbar .header__right .header__right-location img {
+  color: #333;
+  font-size: 15px;
+  font-weight: normal;
+  opacity: .5;
+}
+
+header .header__navbar .header__right .header__right-location button span {
+  color: #9b9b9b;
+  font-size: 13px;
+  font-weight: normal;
+  margin-right: 10px;
+}
+
+header .header__navbar .header__right .header__right-location button:focus {
+  box-shadow: none;
+}
+
+header .header__navbar .header__right .header__right-location .dropdown-menu {
+  z-index: 1;
+}
+
+header .header__navbar .header__right .header__right-location .dropdown-menu a:hover {
+  background-color: #60c5ef;
+  color: #ffffff;
+  transition: all .3s;
+}
+
+header .header__navbar #header__right-dropdown-button img {
+  width: 25px;
+}
+
+@media screen and (max-width: 1200px) {
+  header .header__navbar .header__menu a {
+    font-size: 15px;
+  }
+  header .header__navbar .header__right .header__right-account a p {
+    font-size: 13px;
+  }
+  header .header__navbar .header__right .header__right-location button span {
+    font-size: 13px;
+  }
+}
+
+@media screen and (max-width: 992px) {
+  header .header__navbar .header__logo a img {
+    width: 50px;
+  }
+  header .header__navbar .header__menu a {
+    font-size: 13px;
+    margin-right: 10px;
+  }
+  header .header__navbar .header__right .header__right-account a img {
+    width: 25px;
+    height: 25px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  header .header__navbar .header__logo {
+    flex: 1;
+  }
+  header .header__menu {
+    transform: translateX(0) !important;
+  }
+}
+
+.tix-carousel {
+  padding-top: 76px;
+}
+
+.tix-carousel .tix-carousel__content {
+  position: relative;
+  transition: all .5s;
+}
+
+.tix-carousel .tix-carousel__content:hover .carousel-inner .carousel-item a button {
+  opacity: 1;
+}
+
+.tix-carousel .tix-carousel__content .carousel-indicators {
+  bottom: 15%;
+}
+
+.tix-carousel .tix-carousel__content .carousel-inner .carousel-item a button {
+  opacity: 0;
+  position: absolute;
+  top: 44%;
+  left: 47%;
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  background-color: rgba(0, 0, 0, 0.5);
+  border: 2px solid #ffffff;
+  transition: all .5s;
+}
+
+.tix-carousel .tix-carousel__content .carousel-inner .carousel-item a button:focus {
+  outline: none;
+}
+
+.tix-carousel .tix-carousel__content .carousel-inner .carousel-item a button:hover {
+  opacity: 0.7;
+}
+
+.tix-carousel .tix-carousel__content .carousel-inner .carousel-item a button i {
+  font-size: 22px;
+  text-indent: 5px;
+  color: #ffffff;
+}
+
+@media screen and (max-width: 768px) {
+  .tix-carousel .tix-carousel__content .carousel-inner .carousel-item a button {
+    width: 50px;
+    height: 50px;
+  }
+  .tix-carousel .tix-carousel__content .carousel-inner .carousel-item a i {
+    font-size: 15px !important;
+    text-indent: 4px !important;
+  }
+}
+
+@media screen and (max-width: 576px) {
+  .tix-carousel .tix-carousel__content .carousel-inner .carousel-item a button {
+    width: 40px;
+    height: 40px;
+  }
+  .tix-carousel .tix-carousel__content .carousel-inner .carousel-item a button i {
+    font-size: 12px !important;
+    text-indent: 2px !important;
+  }
+}
+
+.tix-buyticket .tix__container .tix-buyticket__row {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-color: #ffffff;
+  transform: translateY(-50%);
+  border-radius: 5px;
+  width: 100%;
+  padding: 20px 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+
+.tix-buyticket .tix__container .tix-buyticket__row .tix-buyticket-btn {
+  width: 19%;
+}
+
+.tix-buyticket .tix__container .tix-buyticket__row .tix-buyticket-btn::after {
+  content: '';
+  position: absolute;
+  right: 0;
+  height: 100%;
+  top: 50%;
+  transform: translateY(-50%);
+  border-right: 2px solid rgba(238, 238, 238, 0.88);
+}
+
+.tix-buyticket .tix__container .tix-buyticket__row .tix-buyticket-btn button {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.tix-buyticket .tix__container .tix-buyticket__row .tix-buyticket-btn button:focus {
+  box-shadow: none;
+}
+
+.tix-buyticket .tix__container .tix-buyticket__row .tix-buyticket-btn .dropdown-menu {
+  height: auto;
+  max-height: 150px;
+  overflow-x: hidden;
+}
+
+.tix-buyticket .tix__container .tix-buyticket__row .tix-buyticket-btn .dropdown-menu .dropdown-item {
+  position: relative;
+  z-index: 3;
+}
+
+.tix-buyticket .tix__container .tix-buyticket__row .tix-buyticket-btn .dropdown-menu .dropdown-item:hover {
+  background-color: #60c5ef;
+  color: #ffffff;
+  transition: all .3s;
+  z-index: 5;
+}
+
+.tix-buyticket .tix__container .tix-buyticket__row .btn-buyticketnow {
+  color: #ffffff;
+  font-size: 15px;
+  font-weight: normal;
+  text-transform: uppercase;
+  background-color: #333;
+  border: 1px solid none;
+  padding: 10px 25px;
+  border-radius: 4px;
+  transition: 0.5s;
+}
+
+.tix-buyticket .tix__container .tix-buyticket__row .btn-buyticketnow:focus {
+  box-shadow: none;
+}
+
+.tix-film {
+  padding-top: 75px;
+}
+
+.tix-film .tix__container nav {
+  position: relative;
+  z-index: 1;
+}
+/*# sourceMappingURL=main.css.map */
