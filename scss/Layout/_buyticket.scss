@@ -13,6 +13,7 @@
             width: 100%;
             padding: $pd-2 $pd-1;
             box-shadow: 0 0 10px $color-black-5;
+            z-index: 2;
             .tix-buyticket-btn{
                 width: 19%;
                 &::after{
@@ -51,13 +52,19 @@
                 }
             }
             .btn-buyticketnow{
-                @include styleText($color-white-0,$fs-0,$fw-normal);
+                @include styleText($color-white-0,$fs-1 + 1,$fw-normal);
                 text-transform: uppercase;
-                @include styleButton($color-black-8,none,$pd-1,$pd-2+5,4px);
+                @include styleButton($color-black-8,none,$pd-1,$pd-1,4px);
                 &:focus{
                     box-shadow: none;
                 }
             }
         }
+    }
+}
+
+@include responsive("large"){
+    .tix-buyticket{
+        display: none;
     }
 }

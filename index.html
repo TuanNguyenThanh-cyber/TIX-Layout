@@ -30,19 +30,19 @@
     <div class="container-fluid">
       <div class="row header__navbar">
         <div class="header__logo col-xl-1 col-lg-2 col-md-2">
-          <a href="#">
+          <a href="./index.html">
             <img src="./img/web-logo.png" alt="">
           </a>
         </div>
         <div class="header__menu text-center col-xl-7 col-lg-5 col-md-5 d-none d-md-block d-lg-block d-xl-block">
-          <a href="">Lịch Chiếu</a>
+          <a href="#LichChieu">Lịch Chiếu</a>
           <a href="">Cụm rạp</a>
           <a href="">Tin Tức</a>
           <a href="">Ứng dụng</a>
         </div>
         <div class="header__right col-xl-4 col-lg-5 col-md-5 d-none d-sm-flex">
           <div class="header__right-account">
-            <a href="">
+            <a href="./login/login.html">
               <img src="./img/avatar.png" alt="">
               <p>Đăng Nhập</p>
             </a>
@@ -63,9 +63,31 @@
             </div>
           </div>
         </div>
-        <button class="btn d-sm-none" id="header__right-dropdown-button">
-          <img src="./img/menu-options.png" alt="">
-        </button>
+      </div>
+      <div class="fixed-top">
+        <div class="collapse navbar-collapse" id="navbarToggleExternalContent">
+          <div class="header-menu__content">
+            <a class="header-menu__login" href="./login/login.html">
+              <img src="./img/user-default.png" alt="">
+              <span>Đăng Nhập</span>
+            </a>
+            <a href="#LichChieu">Lịch Chiếu</a>
+            <a href="">Cụm Rạp</a>
+            <a href="">Tin Tức</a>
+            <a href="">Ứng Dụng</a>
+            <a href="">Hồ Chí Minh</a>
+          </div>
+        </div>
+        <nav class="navbar navbar-dark">
+          <div class="header-logo__mobile">
+            <a href="./index.html">
+              <img src="./img/web-logo.png" alt="">
+            </a>
+          </div>
+          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarToggleExternalContent" aria-controls="navbarToggleExternalContent" aria-expanded="true" aria-label="Toggle navigation">
+            <i class="fa fa-bars"></i>
+          </button>
+        </nav>
       </div>
     </div>
     </div>
@@ -122,7 +144,7 @@
     </div>
   </section>
 
-  <section class="tix-buyticket d-none d-lg-block">
+  <section class="tix-buyticket">
     <div class="tix__container">
       <div class="tix-buyticket__row">
         <div class="dropdown tix-buyticket-btn">
@@ -206,30 +228,727 @@
     </div>
   </section>
   
-  <section class="tix-film">
+  <section class="tix-film" id="LichChieu">
     <div class="tix__container">
-      <nav class="navbar navbar-expand-lg navbar-light bg-light">
-        <a class="navbar-brand" href="#">Navbar</a>
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarNav">
-          <ul class="navbar-nav">
-            <li class="nav-item active">
-              <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#">Features</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#">Pricing</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Disabled</a>
-            </li>
-          </ul>
+      <ul class="tix-film__title">
+        <li>
+          <a href=""  class="tix-film__title-active">
+            Đang Chiếu
+          </a>
+        </li>
+        <li>
+          <a href=""  class="tix-film__title-no-active">
+            Sắp Chiếu
+          </a>
+        </li>
+      </ul>
+      <div class="tix-film__largecontainer">
+        <div id="carouselExampleControls" class="carousel slide tix-film__content-carousel" data-ride="carousel">
+          <div class="carousel-inner">
+            <div class="carousel-item active">
+              <div class="row tix-film__row">
+                <div class="col-3 tix-film__content-col">
+                  <a href="">
+                    <div class="tix-film__smallcontainer">
+                      <div class="tix-film__img">
+                        <img src="./img/tom-jerry-16127706651597_215x318.png" alt="">
+                        <div class="tix-film__rating">
+                          <p class="tix-film__rating-point">7.6</p>
+                          <span class="tix-film__rating-star">
+                            <img src="./img/star1.png" alt="">
+                            <img src="./img/star1.png" alt="">
+                            <img src="./img/star1.png" alt="">
+                            <img src="./img/star1.2.png" alt="">
+                          </span>
+                        </div>
+                        <div class="tix-film__btn-play">
+                          <button id="tom-jerry">
+                            <i class="fa fa-play"></i>
+                          </button>
+                        </div>
+                      </div>
+                      <div class="tix-film__info">
+                        <div class="tix-film__namefilm">
+                          <span class="ageTypeGreen">P</span>
+                          <span class="tix-film__info-name">Tom & Jerry</span>
+                        </div>
+                        <div class="tix-film__time">
+                          <span>100 phút</span>
+                        </div>
+                        <div class="tix-film__btn-buyticket">
+                          <button class="btn-red-buyticket">
+                            Mua vé
+                          </button>
+                        </div>
+                      </div>
+                    </div>
+                  </a>
+                </div>
+                <div class="col-3 tix-film__content-col">
+                  <a href="">
+                    <div class="tix-film__smallcontainer">
+                      <div class="tix-film__img">
+                        <img src="./img/lua-deu-gap-lua-dao-the-con-heartist-c16-16082739589858_215x318.png" alt="">
+                        <div class="tix-film__rating">
+                          <p class="tix-film__rating-point">8.8</p>
+                          <span class="tix-film__rating-star">
+                            <img src="./img/star1.png" alt="">
+                            <img src="./img/star1.png" alt="">
+                            <img src="./img/star1.png" alt="">
+                            <img src="./img/star1.png" alt="">
+                            <img src="./img/star1.2.png" alt="">
+                          </span>
+                        </div>
+                        <div class="tix-film__btn-play">
+                          <button id="lua-deu-gap-lua-dao-the-con-heartist">
+                            <i class="fa fa-play"></i>
+                          </button>
+                        </div>
+                      </div>
+                      <div class="tix-film__info">
+                        <div class="tix-film__namefilm">
+                          <span class="ageTypeRed">C16</span>
+                          <span class="tix-film__info-name">Lừa Đểu Gặp Lừa Đảo - The Con-Heartist (C16)</span>
+                        </div>
+                        <div class="tix-film__time">
+                          <span>128 phút</span>
+                        </div>
+                        <div class="tix-film__btn-buyticket">
+                          <button class="btn-red-buyticket">
+                            Mua vé
+                          </button>
+                        </div>
+                      </div>
+                    </div>
+                  </a>
+                </div>
+                <div class="col-3 tix-film__content-col">
+                  <a href="">
+                    <div class="tix-film__smallcontainer">
+                      <div class="tix-film__img">
+                        <img src="./img/tazza-than-bip-jack-chot-tazza-one-eyed-jack-c13-16127716280582_215x318.png" alt="">
+                        <div class="tix-film__rating">
+                          <p class="tix-film__rating-point">7.3</p>
+                          <span class="tix-film__rating-star">
+                            <img src="./img/star1.png" alt="">
+                            <img src="./img/star1.png" alt="">
+                            <img src="./img/star1.png" alt="">
+                            <img src="./img/star1.2.png" alt="">
+                          </span>
+                        </div>
+                        <div class="tix-film__btn-play">
+                          <button id="tazza-than-bip-jack-chot">
+                            <i class="fa fa-play"></i>
+                          </button>
+                        </div>
+                      </div>
+                      <div class="tix-film__info">
+                        <div class="tix-film__namefilm">
+                          <span class="ageTypeRed">C13</span>
+                          <span class="tix-film__info-name">Tazza: Thần Bịp Jack Chột - Tazza: One Eyed Jack (C13)</span>
+                        </div>
+                        <div class="tix-film__time">
+                          <span>139 phút</span>
+                        </div>
+                        <div class="tix-film__btn-buyticket">
+                          <button class="btn-red-buyticket">
+                            Mua vé
+                          </button>
+                        </div>
+                      </div>
+                    </div>
+                  </a>
+                </div>
+                <div class="col-3 tix-film__content-col">
+                  <a href="">
+                    <div class="tix-film__smallcontainer">
+                      <div class="tix-film__img">
+                        <img src="./img/tay-xa-thu-the-marksman-c16-16111970241171_215x318.png" alt="">
+                        <div class="tix-film__rating">
+                          <p class="tix-film__rating-point">7.2</p>
+                          <span class="tix-film__rating-star">
+                            <img src="./img/star1.png" alt="">
+                            <img src="./img/star1.png" alt="">
+                            <img src="./img/star1.png" alt="">
+                            <img src="./img/star1.2.png" alt="">
+                          </span>
+                        </div>
+                        <div class="tix-film__btn-play">
+                          <button id="tay-xa-thu-the-marksman">
+                            <i class="fa fa-play"></i>
+                          </button>
+                        </div>
+                      </div>
+                      <div class="tix-film__info">
+                        <div class="tix-film__namefilm">
+                          <span class="ageTypeRed">C16</span>
+                          <span class="tix-film__info-name">Tay Xạ Thủ - The Marksman (C16)</span>
+                        </div>
+                        <div class="tix-film__time">
+                          <span>107 phút</span>
+                        </div>
+                        <div class="tix-film__btn-buyticket">
+                          <button class="btn-red-buyticket">
+                            Mua vé
+                          </button>
+                        </div>
+                      </div>
+                    </div>
+                  </a>
+                </div>
+              </div>
+              <div class="row tix-film__row">
+                <div class="col-3 tix-film__content-col">
+                  <a href="">
+                    <div class="tix-film__smallcontainer">
+                      <div class="tix-film__img">
+                        <img src="./img/ainbo-nu-chien-binh-amazon-ainbo-spirit-of-the-amazon-p-16127703376114_215x318.png" alt="">
+                        <div class="tix-film__rating">
+                          <p class="tix-film__rating-point">6.0</p>
+                          <span class="tix-film__rating-star">
+                            <img src="./img/star1.png" alt="">
+                            <img src="./img/star1.png" alt="">
+                            <img src="./img/star1.png" alt="">
+                          </span>
+                        </div>
+                        <div class="tix-film__btn-play">
+                          <button id="ainbo-nu-chien-binh-amazon">
+                            <i class="fa fa-play"></i>
+                          </button>
+                        </div>
+                      </div>
+                      <div class="tix-film__info">
+                        <div class="tix-film__namefilm">
+                          <span class="ageTypeGreen">P</span>
+                          <span class="tix-film__info-name">Ainbo: Nữ Chiến Binh Amazon (P)</span>
+                        </div>
+                        <div class="tix-film__time">
+                          <span>100 phút</span>
+                        </div>
+                        <div class="tix-film__btn-buyticket">
+                          <button class="btn-red-buyticket">
+                            Mua vé
+                          </button>
+                        </div>
+                      </div>
+                    </div>
+                  </a>
+                </div>
+                <div class="col-3 tix-film__content-col">
+                  <a href="">
+                    <div class="tix-film__smallcontainer">
+                      <div class="tix-film__img">
+                        <img src="./img/sieu-trom-duong-pho-16139791273302_215x318.png" alt="">
+                        <div class="tix-film__rating">
+                          <p class="tix-film__rating-point">8.0</p>
+                          <span class="tix-film__rating-star">
+                            <img src="./img/star1.png" alt="">
+                            <img src="./img/star1.png" alt="">
+                            <img src="./img/star1.png" alt="">
+                            <img src="./img/star1.png" alt="">
+                          </span>
+                        </div>
+                        <div class="tix-film__btn-play">
+                          <button id="sieu-trom-duong-pho">
+                            <i class="fa fa-play"></i>
+                          </button>
+                        </div>
+                      </div>
+                      <div class="tix-film__info">
+                        <div class="tix-film__namefilm">
+                          <span class="ageTypeRed">C16</span>
+                          <span class="tix-film__info-name">Siêu Trộm Đường Phố (C16)</span>
+                        </div>
+                        <div class="tix-film__time">
+                          <span>90 phút</span>
+                        </div>
+                        <div class="tix-film__btn-buyticket">
+                          <button class="btn-red-buyticket">
+                            Mua vé
+                          </button>
+                        </div>
+                      </div>
+                    </div>
+                  </a>
+                </div>
+                <div class="col-3 tix-film__content-col">
+                  <a href="">
+                    <div class="tix-film__smallcontainer">
+                      <div class="tix-film__img">
+                        <img src="./img/nam-sinh-so-11-the-child-who-would-not-come-c18-16111996672572_215x318.png" alt="">
+                        <div class="tix-film__rating">
+                          <p class="tix-film__rating-point">4.4</p>
+                          <span class="tix-film__rating-star">
+                            <img src="./img/star1.png" alt="">
+                            <img src="./img/star1.png" alt="">
+                            <img src="./img/star1.2.png" alt="">
+                          </span>
+                        </div>
+                        <div class="tix-film__btn-play">
+                          <button id="nam-sinh-so-11">
+                            <i class="fa fa-play"></i>
+                          </button>
+                        </div>
+                      </div>
+                      <div class="tix-film__info">
+                        <div class="tix-film__namefilm">
+                          <span class="ageTypeRed">C18</span>
+                          <span class="tix-film__info-name">Nam Sinh Số 11 - The Child Who Would Not Come (C18)</span>
+                        </div>
+                        <div class="tix-film__time">
+                          <span>88 phút</span>
+                        </div>
+                        <div class="tix-film__btn-buyticket">
+                          <button class="btn-red-buyticket">
+                            Mua vé
+                          </button>
+                        </div>
+                      </div>
+                    </div>
+                  </a>
+                </div>
+                <div class="col-3 tix-film__content-col">
+                  <a href="">
+                    <div class="tix-film__smallcontainer">
+                      <div class="tix-film__img">
+                        <img src="./img/gai-gia-lam-chieu-v-nhung-cuoc-doi-vuong-gia-16141605727831_215x318.jpg" alt="">
+                        <div class="tix-film__rating">
+                          <p class="tix-film__rating-point">5.8</p>
+                          <span class="tix-film__rating-star">
+                            <img src="./img/star1.png" alt="">
+                            <img src="./img/star1.png" alt="">
+                            <img src="./img/star1.2.png" alt="">
+                          </span>
+                        </div>
+                        <div class="tix-film__btn-play">
+                          <button id="gai-gia-lam-chieu-v-nhung-cuoc-doi-vuong-gia">
+                            <i class="fa fa-play"></i>
+                          </button>
+                        </div>
+                      </div>
+                      <div class="tix-film__info">
+                        <div class="tix-film__namefilm">
+                          <span class="ageTypeRed">C15</span>
+                          <span class="tix-film__info-name">Gái Già Lắm Chiêu V - Những Cuộc Đời Vương Giả</span>
+                        </div>
+                        <div class="tix-film__time">
+                          <span>115 phút</span>
+                        </div>
+                        <div class="tix-film__btn-buyticket">
+                          <button class="btn-red-buyticket">
+                            Mua vé
+                          </button>
+                        </div>
+                      </div>
+                    </div>
+                  </a>
+                </div>
+              </div>
+            </div>
+            <div class="carousel-item">
+              <div class="row tix-film__row">
+                <div class="col-3 tix-film__content-col">
+                  <a href="">
+                    <div class="tix-film__smallcontainer">
+                      <div class="tix-film__img">
+                        <img src="./img/tho-san-quai-vat-monster-hunter-c13-16091253467891_215x318.png" alt="">
+                        <div class="tix-film__rating">
+                          <p class="tix-film__rating-point">8.8</p>
+                          <span class="tix-film__rating-star">
+                            <img src="./img/star1.png" alt="">
+                            <img src="./img/star1.png" alt="">
+                            <img src="./img/star1.png" alt="">
+                            <img src="./img/star1.png" alt="">
+                            <img src="./img/star1.2.png" alt="">
+                          </span>
+                        </div>
+                        <div class="tix-film__btn-play">
+                          <button id="tho-san-quai-vat-monster-hunter">
+                            <i class="fa fa-play"></i>
+                          </button>
+                        </div>
+                      </div>
+                      <div class="tix-film__info">
+                        <div class="tix-film__namefilm">
+                          <span class="ageTypeRed">C13</span>
+                          <span class="tix-film__info-name">Thợ Săn Quái Vật - Monster Hunter (C13)</span>
+                        </div>
+                        <div class="tix-film__time">
+                          <span>104 phút</span>
+                        </div>
+                        <div class="tix-film__btn-buyticket">
+                          <button class="btn-red-buyticket">
+                            Mua vé
+                          </button>
+                        </div>
+                      </div>
+                    </div>
+                  </a>
+                </div>
+                <div class="col-3 tix-film__content-col">
+                  <a href="">
+                    <div class="tix-film__smallcontainer">
+                      <div class="tix-film__img">
+                        <img src="./img/cua-lai-vo-bau-c16-15767556316037_215x318.jpg" alt="">
+                        <div class="tix-film__rating">
+                          <p class="tix-film__rating-point">7.8</p>
+                          <span class="tix-film__rating-star">
+                            <img src="./img/star1.png" alt="">
+                            <img src="./img/star1.png" alt="">
+                            <img src="./img/star1.png" alt="">
+                            <img src="./img/star1.2.png" alt="">
+                          </span>
+                        </div>
+                        <div class="tix-film__btn-play">
+                          <button id="cua-lai-vo-bau">
+                            <i class="fa fa-play"></i>
+                          </button>
+                        </div>
+                      </div>
+                      <div class="tix-film__info">
+                        <div class="tix-film__namefilm">
+                          <span class="ageTypeRed">C16</span>
+                          <span class="tix-film__info-name">Cua Lại Vợ Bầu - Win My Baby Back (C16)</span>
+                        </div>
+                        <div class="tix-film__time">
+                          <span>102 phút</span>
+                        </div>
+                        <div class="tix-film__btn-buyticket">
+                          <button class="btn-red-buyticket">
+                            Mua vé
+                          </button>
+                        </div>
+                      </div>
+                    </div>
+                  </a>
+                </div>
+                <div class="col-3 tix-film__content-col">
+                  <a href="">
+                    <div class="tix-film__smallcontainer">
+                      <div class="tix-film__img">
+                        <img src="./img/thuyen-truong-rang-kiem-va-vien-kim-cuong-ma-thuat-captain-sabertooth-and-the-magic-diamond-p-16105980048686_215x318.png" alt="">
+                        <div class="tix-film__rating">
+                          <p class="tix-film__rating-point">7.7</p>
+                          <span class="tix-film__rating-star">
+                            <img src="./img/star1.png" alt="">
+                            <img src="./img/star1.png" alt="">
+                            <img src="./img/star1.png" alt="">
+                            <img src="./img/star1.2.png" alt="">
+                          </span>
+                        </div>
+                        <div class="tix-film__btn-play">
+                          <button id="thuyen-truong-rang-kiem-va-vien-kim-cuong-ma-thuat">
+                            <i class="fa fa-play"></i>
+                          </button>
+                        </div>
+                      </div>
+                      <div class="tix-film__info">
+                        <div class="tix-film__namefilm">
+                          <span class="ageTypeGreen">P</span>
+                          <span class="tix-film__info-name">Captain Sabertooth and The Magic Diamond (P)</span>
+                        </div>
+                        <div class="tix-film__time">
+                          <span>88 phút</span>
+                        </div>
+                        <div class="tix-film__btn-buyticket">
+                          <button class="btn-red-buyticket">
+                            Mua vé
+                          </button>
+                        </div>
+                      </div>
+                    </div>
+                  </a>
+                </div>
+                <div class="col-3 tix-film__content-col">
+                  <a href="">
+                    <div class="tix-film__smallcontainer">
+                      <div class="tix-film__img">
+                        <img src="./img/can-phong-ma-am-stigmatized-properties-c16-16113060341189_215x318.png" alt="">
+                        <div class="tix-film__rating">
+                          <p class="tix-film__rating-point">7.6</p>
+                          <span class="tix-film__rating-star">
+                            <img src="./img/star1.png" alt="">
+                            <img src="./img/star1.png" alt="">
+                            <img src="./img/star1.png" alt="">
+                            <img src="./img/star1.2.png" alt="">
+                          </span>
+                        </div>
+                        <div class="tix-film__btn-play">
+                          <button id="can-phong-ma-am-stigmatized-properties">
+                            <i class="fa fa-play"></i>
+                          </button>
+                        </div>
+                      </div>
+                      <div class="tix-film__info">
+                        <div class="tix-film__namefilm">
+                          <span class="ageTypeRed">C16</span>
+                          <span class="tix-film__info-name">Căn Phòng Ma Ám - Stigmatized Properties (C16)</span>
+                        </div>
+                        <div class="tix-film__time">
+                          <span>111 phút</span>
+                        </div>
+                        <div class="tix-film__btn-buyticket">
+                          <button class="btn-red-buyticket">
+                            Mua vé
+                          </button>
+                        </div>
+                      </div>
+                    </div>
+                  </a>
+                </div>
+              </div>
+              <div class="row tix-film__row">
+                <div class="col-3 tix-film__content-col">
+                  <a href="">
+                    <div class="tix-film__smallcontainer">
+                      <div class="tix-film__img">
+                        <img src="./img/di-nguyen-bi-an-the-day-i-died-unclose-case-c16-16117355317735_215x318.png" alt="">
+                        <div class="tix-film__rating">
+                          <p class="tix-film__rating-point">6.5</p>
+                          <span class="tix-film__rating-star">
+                            <img src="./img/star1.png" alt="">
+                            <img src="./img/star1.png" alt="">
+                            <img src="./img/star1.png" alt="">
+                            <img src="./img/star1.2.png" alt="">
+                          </span>
+                        </div>
+                        <div class="tix-film__btn-play">
+                          <button id="di-nguyen-bi-an">
+                            <i class="fa fa-play"></i>
+                          </button>
+                        </div>
+                      </div>
+                      <div class="tix-film__info">
+                        <div class="tix-film__namefilm">
+                          <span class="ageTypeRed">C16</span>
+                          <span class="tix-film__info-name">Di Nguyện Bí Ẩn - The Day I Died: Unclose Case (C16)</span>
+                        </div>
+                        <div class="tix-film__time">
+                          <span>116 phút</span>
+                        </div>
+                        <div class="tix-film__btn-buyticket">
+                          <button class="btn-red-buyticket">
+                            Mua vé
+                          </button>
+                        </div>
+                      </div>
+                    </div>
+                  </a>
+                </div>
+                <div class="col-3 tix-film__content-col">
+                  <a href="">
+                    <div class="tix-film__smallcontainer">
+                      <div class="tix-film__img">
+                        <img src="./img/vung-troi-tu-than-horizon-line-16111979462516.png" alt="">
+                        <div class="tix-film__rating">
+                          <p class="tix-film__rating-point">8.0</p>
+                          <span class="tix-film__rating-star">
+                            <img src="./img/star1.png" alt="">
+                            <img src="./img/star1.png" alt="">
+                            <img src="./img/star1.png" alt="">
+                            <img src="./img/star1.png" alt="">
+                          </span>
+                        </div>
+                        <div class="tix-film__btn-play">
+                          <button id="vung-troi-tu-than-horizon-line">
+                            <i class="fa fa-play"></i>
+                          </button>
+                        </div>
+                      </div>
+                      <div class="tix-film__info">
+                        <div class="tix-film__namefilm">
+                          <span class="ageTypeRed">C13</span>
+                          <span class="tix-film__info-name">Vùng Trời Tử Thần - Horizon Line (C13)</span>
+                        </div>
+                        <div class="tix-film__time">
+                          <span>128 phút</span>
+                        </div>
+                        <div class="tix-film__btn-buyticket">
+                          <button class="btn-red-buyticket">
+                            Mua vé
+                          </button>
+                        </div>
+                      </div>
+                    </div>
+                  </a>
+                </div>
+                <div class="col-3 tix-film__content-col">
+                  <a href="">
+                    <div class="tix-film__smallcontainer">
+                      <div class="tix-film__img">
+                        <img src="./img/ban-quy-come-play-c16-16111984751337_215x318.png" alt="">
+                        <div class="tix-film__rating">
+                          <p class="tix-film__rating-point">7.7</p>
+                          <span class="tix-film__rating-star">
+                            <img src="./img/star1.png" alt="">
+                            <img src="./img/star1.png" alt="">
+                            <img src="./img/star1.png" alt="">
+                            <img src="./img/star1.2.png" alt="">
+                          </span>
+                        </div>
+                        <div class="tix-film__btn-play">
+                          <button id="ban-quy-come-play">
+                            <i class="fa fa-play"></i>
+                          </button>
+                        </div>
+                      </div>
+                      <div class="tix-film__info">
+                        <div class="tix-film__namefilm">
+                          <span class="ageTypeRed">C16</span>
+                          <span class="tix-film__info-name">Bạn Quỷ - Come Play (C16)</span>
+                        </div>
+                        <div class="tix-film__time">
+                          <span>96 phút</span>
+                        </div>
+                        <div class="tix-film__btn-buyticket">
+                          <button class="btn-red-buyticket">
+                            Mua vé
+                          </button>
+                        </div>
+                      </div>
+                    </div>
+                  </a>
+                </div>
+                <div class="col-3 tix-film__content-col">
+                  <a href="">
+                    <div class="tix-film__smallcontainer">
+                      <div class="tix-film__img">
+                        <img src="./img/cuoc-giai-cuu-sinh-tu-redemption-day-c18-16105120605594_215x318.png" alt="">
+                        <div class="tix-film__rating">
+                          <p class="tix-film__rating-point">5.6</p>
+                          <span class="tix-film__rating-star">
+                            <img src="./img/star1.png" alt="">
+                            <img src="./img/star1.png" alt="">
+                            <img src="./img/star1.2.png" alt="">
+                          </span>
+                        </div>
+                        <div class="tix-film__btn-play">
+                          <button id="cuoc-giai-cuu-sinh-tu">
+                            <i class="fa fa-play"></i>
+                          </button>
+                        </div>
+                      </div>
+                      <div class="tix-film__info">
+                        <div class="tix-film__namefilm">
+                          <span class="ageTypeRed">C18</span>
+                          <span class="tix-film__info-name">Cuộc Giải Cứu Sinh Tử - Redemption Day (C18)</span>
+                        </div>
+                        <div class="tix-film__time">
+                          <span>94 phút</span>
+                        </div>
+                        <div class="tix-film__btn-buyticket">
+                          <button class="btn-red-buyticket">
+                            Mua vé
+                          </button>
+                        </div>
+                      </div>
+                    </div>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
+            <i class="fa fa-angle-left"></i>
+            <span class="sr-only">Previous</span>
+          </a>
+          <a class="carousel-control-next" href="#carouselExampleControls" role="button" data-slide="next">
+            <i class="fa fa-angle-right"></i>
+            <span class="sr-only">Next</span>
+          </a>
         </div>
-      </nav>
+      </div>
+      <div class="tix-film__formobile d-xl-none">
+        <div class="tix-film__item">
+          <a href="">
+            <div class="tix-film__content">
+              <img src="./img/tom-jerry-16127706494221_540x225.png" alt="">
+              <div class="tix-film__rating">
+                <p class="tix-film__rating-point">7.3</p>
+                <span class="tix-film__rating-star">
+                  <img src="./img/star1.png" alt="">
+                  <img src="./img/star1.png" alt="">
+                  <img src="./img/star1.png" alt="">
+                  <img src="./img/star1.2.png" alt="">
+                </span>
+              </div>
+              <div class="tix-film__typeAge">
+                <span class="ageTypeGreen">P</span>
+              </div>
+            </div>
+          </a>
+        </div>
+        <div class="tix-film__item">
+          <a href="">
+            <div class="tix-film__content">
+              <img src="./img/lua-deu-gap-lua-dao-16105107337344.jpg" alt="">
+              <div class="tix-film__rating">
+                <p class="tix-film__rating-point">8.8</p>
+                <span class="tix-film__rating-star">
+                  <img src="./img/star1.png" alt="">
+                  <img src="./img/star1.png" alt="">
+                  <img src="./img/star1.png" alt="">
+                  <img src="./img/star1.png" alt="">
+                  <img src="./img/star1.2.png" alt="">
+                </span>
+              </div>
+              <div class="tix-film__typeAge">
+                <span class="ageTypeRed">C16</span>
+              </div>
+            </div>
+          </a>
+        </div>
+        <div class="tix-film__item">
+          <a href="">
+            <div class="tix-film__content">
+              <img src="./img/tazza-than-bip-jack-chot-tazza-one-eyed-jack-c13-16127716191736_540x225.png" alt="">
+              <div class="tix-film__rating">
+                <p class="tix-film__rating-point">7.3</p>
+                <span class="tix-film__rating-star">
+                  <img src="./img/star1.png" alt="">
+                  <img src="./img/star1.png" alt="">
+                  <img src="./img/star1.png" alt="">
+                  <img src="./img/star1.2.png" alt="">
+                </span>
+              </div>
+              <div class="tix-film__typeAge">
+                <span class="ageTypeRed">C13</span>
+              </div>
+            </div>
+          </a>
+        </div>
+        <div class="tix-film__formobile-btn">
+          <button class="btn-seemore tix-film__formobile-btn-seemore">
+            Xem thêm
+          </button>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="bg-backnews">
+  </section>
+
+  <section class="tix-movies">
+    <div class="tix__container">
+      <div class="row">
+        <div class="col-3">
+          <div class="nav flex-column nav-pills" id="v-pills-tab" role="tablist" aria-orientation="vertical">
+            <a class="nav-link active" id="v-pills-home-tab" data-toggle="pill" href="#v-pills-home" role="tab" aria-controls="v-pills-home" aria-selected="true">Home</a>
+            <a class="nav-link" id="v-pills-profile-tab" data-toggle="pill" href="#v-pills-profile" role="tab" aria-controls="v-pills-profile" aria-selected="false">Profile</a>
+            <a class="nav-link" id="v-pills-messages-tab" data-toggle="pill" href="#v-pills-messages" role="tab" aria-controls="v-pills-messages" aria-selected="false">Messages</a>
+            <a class="nav-link" id="v-pills-settings-tab" data-toggle="pill" href="#v-pills-settings" role="tab" aria-controls="v-pills-settings" aria-selected="false">Settings</a>
+          </div>
+        </div>
+        <div class="col-9">
+          <div class="tab-content" id="v-pills-tabContent">
+            <div class="tab-pane fade show active" id="v-pills-home" role="tabpanel" aria-labelledby="v-pills-home-tab">...</div>
+            <div class="tab-pane fade" id="v-pills-profile" role="tabpanel" aria-labelledby="v-pills-profile-tab">...</div>
+            <div class="tab-pane fade" id="v-pills-messages" role="tabpanel" aria-labelledby="v-pills-messages-tab">...</div>
+            <div class="tab-pane fade" id="v-pills-settings" role="tabpanel" aria-labelledby="v-pills-settings-tab">...</div>
+          </div>
+        </div>
+      </div>
     </div>
   </section>
 

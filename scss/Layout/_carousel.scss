@@ -74,21 +74,6 @@
 
 @include responsive("small"){
     .tix-carousel{
-        .tix-carousel__content{
-            .carousel-inner{
-                .carousel-item{
-                    a{
-                        button{
-                            width: 40px;
-                            height: 40px;
-                            i{
-                                font-size: 12px !important;
-                                text-indent: 2px !important;
-                            }
-                        }
-                    }
-                }
-            }
-        }
+        display: none;
     }
 }
