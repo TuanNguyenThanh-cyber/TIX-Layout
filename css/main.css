@@ -789,6 +789,153 @@ header .fixed-top nav button i {
   }
 }
 
+.tix-movies .tix__container .row .col-2 .tix-movies__col-2 {
+  border: 1px solid #ebebec;
+}
+
+.tix-movies .tix__container .row .col-2 .tix-movies__col-2 a {
+  display: flex;
+  justify-content: center;
+  text-decoration: none;
+  padding: 20px;
+  position: relative;
+  transition: all .2s;
+  background-color: #ffffff;
+  width: 100%;
+  opacity: 0.5;
+}
+
+.tix-movies .tix__container .row .col-2 .tix-movies__col-2 a img {
+  width: 50px;
+}
+
+.tix-movies .tix__container .row .col-2 .tix-movies__col-2 a:hover {
+  opacity: 1;
+}
+
+.tix-movies .tix__container .row .col-2 .tix-movies__col-2 a::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  width: calc(100% - 40px);
+  transform: translateX(-50%);
+  border-bottom: 1px solid #ffffff;
+  border-color: rgba(238, 238, 238, 0.88);
+}
+
+.tix-movies .tix__container .row .col-2 .tix-movies__col-2 a.active {
+  opacity: 1;
+}
+
+.tix-movies .tix__container .row .col-4 {
+  border: 1px solid #ebebec;
+}
+
+.tix-movies .tix__container .row .col-4 .tix-movies__col-4 {
+  display: flex;
+  justify-content: center;
+}
+
+.tix-movies .tix__container .row .col-4 .tix-movies__col-4 .tix-movies__container a {
+  text-decoration: none;
+  padding: 16px;
+  padding-left: 0;
+  position: relative;
+  opacity: 0.5;
+  transition: all .3s;
+}
+
+.tix-movies .tix__container .row .col-4 .tix-movies__col-4 .tix-movies__container a::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  border-bottom: 1px solid #ffffff;
+  border-color: rgba(238, 238, 238, 0.88);
+}
+
+.tix-movies .tix__container .row .col-4 .tix-movies__col-4 .tix-movies__container a:hover {
+  opacity: 1;
+}
+
+.tix-movies .tix__container .row .col-4 .tix-movies__col-4 .tix-movies__container a .tix-movies__container__content {
+  display: flex;
+  align-items: center;
+}
+
+.tix-movies .tix__container .row .col-4 .tix-movies__col-4 .tix-movies__container a .tix-movies__container__content .tix-movies__container__content-img {
+  margin-right: 10px;
+}
+
+.tix-movies .tix__container .row .col-4 .tix-movies__col-4 .tix-movies__container a .tix-movies__container__content .tix-movies__container__content-img img {
+  width: 50px;
+}
+
+.tix-movies .tix__container .row .col-4 .tix-movies__col-4 .tix-movies__container a .tix-movies__container__content .tix-movies__container__content-info {
+  color: #000000;
+  font-size: 14px;
+  font-weight: normal;
+}
+
+.tix-movies .tix__container .row .col-4 .tix-movies__col-4 .tix-movies__container a .tix-movies__container__content .tix-movies__container__content-info .tix-movies__info-location {
+  color: #949494;
+  font-size: 12px;
+  font-weight: normal;
+  display: block;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  margin-bottom: 0;
+  width: 200px;
+}
+
+.tix-movies .tix__container .row .col-4 .tix-movies__col-4 .tix-movies__container a .tix-movies__container__content .tix-movies__container__content-info .showingDetailCinema {
+  color: #fb4226;
+  font-size: 12px;
+  font-weight: normal;
+}
+
+.tix-movies .tix__container .row .col-4 .tix-movies__col-4 .tix-movies__container a.active {
+  opacity: 1;
+}
+
+.tix-movies .tix__container .row .col-4 .tix-movies__col-4 #bhd-cineplex-2 .bhd-cineplex__name {
+  color: #8bc541;
+  font-size: 14px;
+  font-weight: normal;
+}
+
+.tix-movies .tix__container .row .col-4 .tix-movies__col-4 #cns-2 .bhd-cineplex__name {
+  color: #df0d7a;
+  font-size: 14px;
+  font-weight: normal;
+}
+
+.tix-movies .tix__container .row .col-4 .tix-movies__col-4 #ddc-2 .bhd-cineplex__name {
+  color: #9c9c9c;
+  font-size: 14px;
+  font-weight: normal;
+}
+
+.tix-movies .tix__container .row .col-4 .tix-movies__col-4 #mega-gs-2 .bhd-cineplex__name {
+  color: #e5a813;
+  font-size: 14px;
+  font-weight: normal;
+}
+
+.tix-movies .tix__container .row .col-4 .tix-movies__col-4 #lotte-cinema-2 .bhd-cineplex__name {
+  color: #ca4137;
+  font-size: 14px;
+  font-weight: normal;
+}
+
+.tix-movies .tix__container .row .col-6 p {
+  text-align: center;
+  margin-top: 25px;
+}
+
 .tix-login {
   background-image: url(../../img/bg-login.jpg);
   background-position: center;
