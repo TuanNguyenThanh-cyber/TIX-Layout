@@ -22,13 +22,13 @@
                         }
                         &::after{
                             content: '';
-                        position: absolute;
-                        bottom: 0;
-                        left: 50%;
-                        width: calc(100% - 40px);
-                        transform: translateX(-50%);
-                        border-bottom: 1px solid $color-white-0;
-                        border-color: $color-white-3;
+                            position: absolute;
+                            bottom: 0;
+                            left: 50%;
+                            width: calc(100% - 40px);
+                            transform: translateX(-50%);
+                            border-bottom: 1px solid $color-white-0;
+                            border-color: $color-white-3;
                         }
                     }
                     a.active{
@@ -36,59 +36,62 @@
                     }
                 }
             }
-            .col-4{
+            .col-5{
                 border: 1px solid #ebebec;
-                .tix-movies__col-4{
+                .tix-movies__col-5{
                     display: flex;
                     justify-content: center;
                     .tix-movies__container{
-                        a{
-                            text-decoration: none;
-                            padding: 16px;
-                            padding-left: 0;
-                            position: relative;
-                            opacity: 0.5;
-                            transition: all .3s;
-                            &::after{
-                                content: '';
-                                position: absolute;
-                                bottom: 0;
-                                left: 0;
-                                width: 100%;
-                                border-bottom: 1px solid $color-white-0;
-                                border-color: $color-white-3;
+                        .tix-movies__col-5{
+                            a{
+                                text-decoration: none;
+                                padding: 16px;
+                                padding-left: 0;
+                                position: relative;
+                                opacity: 0.5;
+                                background-color: $color-white-0;
+                                transition: all .3s;
+                                &::after{
+                                    content: '';
+                                    position: absolute;
+                                    bottom: 0;
+                                    left: 0;
+                                    width: 100%;
+                                    border-bottom: 1px solid $color-white-0;
+                                    border-color: $color-white-3;
+                                }
+                                &:hover{
+                                    opacity: 1;
+                                }
+                                .tix-movies__container__content{
+                                    display: flex;
+                                    align-items: center;
+                                    .tix-movies__container__content-img{
+                                        margin-right: $mg-1;
+                                        img{
+                                            width: 50px;
+                                        }
+                                    }
+                                    .tix-movies__container__content-info{
+                                        @include styleText($color-black-0,$fs-1 + 1,$fw-normal);
+                                        .tix-movies__info-location{
+                                            @include styleText($color-gray-5,$fs-1 - 1, $fw-normal);
+                                            display: block;
+                                            overflow: hidden;
+                                            text-overflow: ellipsis;
+                                            white-space: nowrap;
+                                            margin-bottom: 0;
+                                            width: 200px;
+                                        }
+                                        .showingDetailCinema{
+                                            @include styleText($color-red-0,$fs-1 - 1,$fw-normal)
+                                        }
+                                    }
+                                }
                             }
-                            &:hover{
+                            a.active{
                                 opacity: 1;
                             }
-                            .tix-movies__container__content{
-                                display: flex;
-                                align-items: center;
-                                .tix-movies__container__content-img{
-                                    margin-right: $mg-1;
-                                    img{
-                                        width: 50px;
-                                    }
-                                }
-                                .tix-movies__container__content-info{
-                                    @include styleText($color-black-0,$fs-1 + 1,$fw-normal);
-                                    .tix-movies__info-location{
-                                        @include styleText($color-gray-5,$fs-1 - 1, $fw-normal);
-                                        display: block;
-                                        overflow: hidden;
-                                        text-overflow: ellipsis;
-                                        white-space: nowrap;
-                                        margin-bottom: 0;
-                                        width: 200px;
-                                    }
-                                    .showingDetailCinema{
-                                        @include styleText($color-red-0,$fs-1 - 1,$fw-normal)
-                                    }
-                                }
-                            }
-                        }
-                        a.active{
-                            opacity: 1;
                         }
                     }
                     #bhd-cineplex-2{
@@ -118,13 +121,23 @@
                     }
                 }
             }
-            .col-6{
-                p{
-                    text-align: center;
-                    margin-top: $mg-2;
+            .col-5{
+                #NoMovies{
+                    p{
+                        text-align: center;
+                        margin-top: $mg-2;
+                    }
                 }
             }
         }
         
+    }
+}
+
+@include responsive("medium"){
+    .tix-movies{
+        .tix__container{
+            width: 90%;
+        }
     }
 }
